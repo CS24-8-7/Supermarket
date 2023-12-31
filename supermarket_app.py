@@ -17,7 +17,6 @@ class ModernSupermarket:
         self.root.configure(bg="#2c3e50")
         self.root.protocol("WM_DELETE_WINDOW", self.root.destroy)
 
-        # Initialize DB
         self.init_database()
 
         # Current user
