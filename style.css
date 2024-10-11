@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
@@ -8,40 +8,61 @@
     scroll-behavior: smooth; 
 }
 
-
 header {
-    background-color: #f0f0f0;
+    background-color: #f9f9f9; /* Softer background */
     width: 100%;
     position: fixed;
     z-index: 999;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 200px ;
+    padding: 10px 20px; /* Reduced padding for mobile responsiveness */
 }
 
-.logo{
+.logo {
     text-decoration: none;
-    color: #3a6cf4;
+    color: #4A90E2; /* Softer blue */
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 1.8em;
+    font-size: 2em; /* Increased size for cuteness */
 }
 
-.navigation a{
-    color: #3a6cf4;
+.navigation a {
+    color: #4A90E2; /* Softer blue */
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 500;
-    padding-left: 30px;
+    padding-left: 20px; /* Reduced padding for a more compact look */
+    transition: color 0.3s; /* Smooth color transition */
 }
 
-.navigation a:hover{
-    color: #601cfc;
+.navigation a:hover {
+    color: #D5006D; /* Playful pink on hover */
 }
 
 section {
-    padding: 100px 200px;
+    padding: 80px 15px; /* Default padding for larger screens (web) */
+}
+
+/* For tablets (medium-sized screens) */
+@media (max-width: 1024px) {
+    section {
+        padding: 60px 10px;
+    }
+}
+
+/* For phones (small-sized screens) */
+@media (max-width: 768px) {
+    section {
+        padding: 40px 8px;
+    }
+}
+
+/* For very small phones (extra-small screens) */
+@media (max-width: 480px) {
+    section {
+        padding: 20px 5px;
+    }
 }
 
 .main {
@@ -57,21 +78,22 @@ section {
 
 .main h2 {
     color: #fff;
-    font-size: 1.4em;
+    font-size: 1.6em; /* Slightly increased size */
     font-weight: 500;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Soft shadow for text */
 }
 
 .main h2 span {
     display: inline-block;
     margin-top: 10px;
-    color: #4e9eff;
-    font-size: 3em;
+    color: #A1C6E7; /* Softer blue */
+    font-size: 3em; /* Large, eye-catching font size */
     font-weight: 600;
 }
 
 .main h3 {
     color: #fff;
-    font-size: 2em;
+    font-size: 2.2em; /* Increased font size */
     font-weight: 700;
     letter-spacing: 1px;
     margin-top: 10px;
@@ -80,34 +102,38 @@ section {
 
 .main-btn {
     color: #fff;
-    background-color: #3a6cf4;
+    background-color: #4A90E2; /* Softer blue */
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 600;
     display: inline-block;
     padding: 0.9375em 2.1875em;
-    letter-spacing: 1px;
-    border-radius: 15px;
+    border-radius: 25px; /* Increased roundness */
     margin-bottom: 40px;
-    transition: 0.7s ease;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
 }
 
 .main-btn:hover {
-    background-color: #0a49f6;
-    transform: scale(1.1);
+    background-color: #D5006D; /* Playful pink */
+    transform: scale(1.05); /* Slight scale effect on hover */
 }
 
 .social-icons a {
     color: #fff;
     font-size: 1.7em;
-    padding-right: 30px;
+    padding-right: 20px; /* Reduced padding for spacing */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.social-icons a:hover {
+    color: #D5006D; /* Playful pink on hover */
 }
 
 .title {
     display: flex;
     justify-content: center;
-    color: #3a6cf4;
-    font-size: 2.2em;
+    color: #4A90E2; /* Softer blue */
+    font-size: 2.5em; /* Increased font size */
     font-weight: 800;
     margin-bottom: 30px;
 }
@@ -120,22 +146,22 @@ section {
 }
 
 .card {
-    background-color: #fff;
-    width: 21.25em;
-    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
-    border-radius: 10px;
+    background-color: #ffffff;
+    width: 22em; /* Slightly increased width */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    border-radius: 15px; /* Increased roundness */
     padding: 25px;
     margin: 15px;
-    transition: 0.7s ease;
+    transition: transform 0.3s; /* Smooth scaling transition */
 }
 
 .card:hover {
-    transform: scale(1.1);
+    transform: scale(1.05); /* Slight scale effect on hover */
 }
 
 .card .icon {
-    color: #3a6cf4;
-    font-size: 8em;
+    color: #4A90E2; /* Softer blue */
+    font-size: 6em; /* Reduced icon size for cuteness */
     text-align: center;
 }
 
@@ -143,42 +169,43 @@ section {
     text-align: center;
 }
 
-.info h3{
-    color: #3a6cf4;
-    font-size: 1.2em;
+.info h3 {
+    color: #4A90E2; /* Softer blue */
+    font-size: 1.5em; /* Increased size for emphasis */
     font-weight: 700;
     margin: 10px;
 }
 
 .projects {
-    background-color: #000016;
+    background-color: #F2F3F4; /* Softer background */
 }
 
-.projects .content{
+.projects .content {
     margin-top: 30px;
 }
 
 .project-card {
-    background-color: #fff;
+    background-color: #ffffff;
     border: 1px solid #fff;
-    min-height: 14em;
-    width: 23em;
+    min-height: 16em; /* Increased height for a more balanced look */
+    width: 24em; /* Slightly increased width */
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 15px; /* Increased roundness */
     margin: 20px;
-    transition: 0.7s ease;
+    transition: transform 0.3s; /* Smooth scaling transition */
 }
 
 .project-card:hover {
-   transform: scale(1.1);
+    transform: scale(1.05); /* Slight scale effect on hover */
 }
 
 .project-card:hover .project-image {
-    opacity: 0.9;
- }
+    opacity: 0.9; /* Slightly reduced opacity on hover */
+}
 
-.project-image img{
-    width: 100%
+.project-image img {
+    width: 100%;
+    border-radius: 15px; /* Rounded corners for images */
 }
 
 .project-info {
@@ -186,8 +213,8 @@ section {
 }
 
 .project-category {
-    font-size: 0.8em;
-    color: #000;
+    font-size: 0.9em; /* Slightly increased font size */
+    color: #777; /* Softer gray */
 }
 
 .project-title {
@@ -200,96 +227,107 @@ section {
 
 .more-details {
     text-decoration: none;
-    color: #3a6cf4;
+    color: #4A90E2; /* Softer blue */
+    transition: color 0.3s; /* Smooth color transition */
 }
 
 .more-details:hover {
-    color: #601cfc;
+    color: #D5006D; /* Playful pink on hover */
 }
 
-.contact .icon{
-    font-size: 4.5em;
+.contact .icon {
+    font-size: 5em; /* Slightly reduced icon size */
+    color: #4A90E2; /* Softer blue */
 }
 
 .contact .info h3 {
-    color: #000;
+    color: #4A90E2; /* Softer blue */
 }
 
 .contact .info p {
     font-size: 1.5em;
+    color: #777; /* Softer gray */
 }
 
 .footer {
-    background-color: #000016;
+    background-color: #2c2c2c;
     color: #fff;
-    padding: 2em;
+    padding: 40px 0;
+    text-align: left;
+}
+
+.footer-container {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap; /* Responsive */
 }
 
-.footer-title {
-    font-size: 1.3em;
-    font-weight: 600;
+.footer .contact-info,
+.footer .about-company,
+.footer .social-icons {
+    flex: 1; /* Allow flexible width for responsiveness */
+    margin: 15px 0;
 }
 
-.footer-title span {
-    color: #3a6cf4;
+.footer .contact-info p,
+.footer .about-company p {
+    margin: 10px 0;
+    font-size: 16px;
 }
 
-.footer .social-icons a{
-    font-size: 1.3em;
-    padding: 0 12px 0 0;
+.footer .contact-info p i {
+    margin-right: 10px;
+    color: #4A90E2; /* Match the blue color scheme */
 }
 
-@media (max-width:1023px){
-    header{
-        padding: 12px 20px;
-    }
-
-    .navigation a{
-        padding-left: 10px;
-    }
-
-    .title{
-        font-size: 1.8em;
-    }
-
-    section{
-        padding: 80px 20px;
-    }
-
-    .main-content h2{
-        font-size: 1em;
-    }
-
-    .main-content h3{
-        font-size: 1.6em;
-    }
-
-    .content{
-        flex-direction: column;
-        align-items: center;
-    }
-
+.footer .social-icons a {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+    transition: color 0.3s;
 }
 
-@media (max-width:641px){
-    body{
-        font-size: 12px;
-    }
+.footer .social-icons a:hover {
+    color: #D5006D; /* Playful pink on hover */
+}
 
-    .main-content h2{
-        font-size: 0.8em;
-    }
+.footer-bottom {
+    border-top: 1px solid #35516c;
+    padding: 10px 0;
+    text-align: center;
+}
 
-    .main-content h3{
-        font-size: 1.4em;
+/* For tablets (medium-sized screens) */
+@media (max-width: 1024px) {
+    .footer-container {
+        flex-direction: column; /* Stack elements on smaller screens */
     }
 }
 
-@media (max-width:300px){
-    body{
-        font-size: 10px;
-     
+/* For phones (small-sized screens) */
+@media (max-width: 768px) {
+    .footer-container {
+        align-items: center; /* Center-align items for smaller screens */
+    }
+
+    .footer .contact-info,
+    .footer .about-company {
+        text-align: center; /* Center-align text for smaller screens */
+    }
+}
+
+/* For very small phones (extra-small screens) */
+@media (max-width: 480px) {
+    .footer .contact-info p,
+    .footer .about-company p {
+        font-size: 14px; /* Smaller font size */
+    }
+
+    .footer .social-icons a {
+        font-size: 18px; /* Smaller icons */
     }
 }
