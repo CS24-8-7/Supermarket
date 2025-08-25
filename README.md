@@ -3,9 +3,8 @@
   <p><strong>✅ تم الإكمال: ديسمبر 2023</strong></p>
   <img src="https://img.shields.io/badge/Status-Completed_in_2023-green?logo=github" />
   <br>
-  <img src="https://img.shields.io/badge/Made%20with-Python-blue?logo=python" />
-  <img src="https://img.shields.io/badge/GUI-Tkinter-orange" />
-  <img src="https://img.shields.io/badge/Database-SQLite-lightgrey?logo=sqlite" />
+
+  <img src="https://github.com/CS24-8-7/Supermarket/blob/main/Supermarket.jpg" />
 </div>
 
 ---
