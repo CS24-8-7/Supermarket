@@ -7,7 +7,7 @@
 
 | Preview |
 |---------|
-| <img src="ss/res.png" width="600"> |
+| <img src="[ss/res.png](https://github.com/CS24-8-7/Supermarket/blob/main/Supermarket.jpg)" width="600"> |
 
 
 # نظام إدارة السوبر ماركت (Supermarket Management System)
