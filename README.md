@@ -1,3 +1,8 @@
+<div align="center">
+  <h1>Supermarket Management System</h1>
+  <p><strong>✅ تم الإكمال: ديسمبر 2023</strong></p>
+  <img src="https://img.shields.io/badge/Status-Completed_in_2023-green?logo=github" />
+</div>
 # نظام إدارة السوبر ماركت (Supermarket Management System)
 
 مشروع مبني باستخدام Python وTkinter لتوفير واجهة رسومية لإدارة المنتجات، الفواتير، والمستخدمين مع تصميم عصري وجذاب.
